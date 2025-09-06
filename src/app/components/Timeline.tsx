@@ -13,7 +13,7 @@ type Event = {
 const events: Event[] = [
   { year: "2024", title: "Joined DSU (B.Tech Robotics & AI)", desc: "Started undergraduate journey in Robotics & AI at DSU." },
   { year: "2024", title: "MathWorks Workshop", desc: "Attended MATLAB / Simulink workshop by MathWorks.", certs: [{ title: "MathWorks Workshop", file: "/assets/certs/mathwork.png" }] },
-  { year: "2025", title: "Finished CS50x & CS50P", desc: "Completed Harvard’s CS50x and CS50P online courses.", certs: [{ title: "CS50x Certificate", file: "/assets/certs/cs50x.png" }, { title: "CS50P Certificate", file: "/assets/certs/cs50p.png" }] },
+  { year: "2025", title: "Finished CS50x & CS50P", desc: "Completed Harvard’s CS50x and CS50P online courses.", certs: [{ title: "CS50x Certificate", file: "/assets/certs/CS50xfinal.png" }, { title: "CS50P Certificate", file: "/assets/certs/cs50p.png" }] },
   { year: "2025", title: "Completed C++ (Udemy)", desc: "Learned C++ via Udemy course.", certs: [{ title: "C++ Certificate", file: "/assets/certs/C++.jpg" }] },
   { year: "2025", title: "IET Student Member", desc: "Became a student member of the Institution of Engineering and Technology.", certs: [{ title: "IET Membership", file: "/assets/certs/iet.png" }] },
 ]
@@ -68,7 +68,7 @@ export default function Timeline({ onClose }: { onClose?: () => void }) {
                 ))}
               </div>
             ) : (
-              <p className="text-xs text-black/60">No certificates for this event.</p>
+              <p className="text-xs text-black/60"></p>
             )}
           </RetroWindow>
         </div>

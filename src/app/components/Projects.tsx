@@ -17,10 +17,10 @@ const projects: Project[] = [
     img: "/assets/certs/rainwater.png",
   },
   {
-    title: "Terminal Bank (CS50x)",
-    desc: "Password-protected CLI bank with accounts & transactions.",
-    img: "/assets/projects/bank.png",
-    certs: [{ title: "CS50x Certificate", file: "/assets/certs/cs50x.png" }],
+    title: "My Retro Portfolio",
+    desc: "Built a portfolio website for myself.",
+    img: "/assets/certs/Project1.png",
+    certs: [{ title: "CS50x Certificate", file: "/assets/certs/CS50xfinal.png" }],
   },
   {
     title: "CS50P / Python Projects",

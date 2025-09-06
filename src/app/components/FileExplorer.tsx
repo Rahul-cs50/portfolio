@@ -7,7 +7,7 @@ import CertViewer from "./CertViewer"
 const files = [
   { name: "MathWorks Workshop", file: "/assets/certs/mathwork.png" },
   { name: "C++ Certificate", file: "/assets/certs/C++.jpg" },
-  { name: "CS50x Certificate", file: "/assets/certs/cs50x.png" },
+  { name: "CS50x Certificate", file: "/assets/certs/CS50xfinal.png" },
   { name: "CS50P Certificate", file: "/assets/certs/cs50p.png" },
 ]
 
