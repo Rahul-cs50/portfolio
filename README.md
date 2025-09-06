@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MY Retro Portfolio
 
-## Getting Started
+#### Video Demo:  https://youtu.be/pwf4VilXv7A
+#### Description:
+This is my CS50x Final Project — a **retro-themed interactive portfolio website** that looks and feels like an old-school pixel desktop.  
+It showcases my academic journey, projects, timeline, and certificates in a playful, nostalgic interface.  
 
-First, run the development server:
+The site features animated parallax mountains, pixel art folders, retro windows, and even a built-in terminal with a mini-game.  
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Motivation
+I wanted to combine my passion for **Robotics & AI** with my love for **retro computing aesthetics**.  
+Instead of a traditional portfolio, I built a desktop-style website where each section (About, Projects, Timeline, Contact) feels like opening a retro window.  
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This project allowed me to apply the programming foundations I learned in **CS50x** (logic, state, abstraction) in a full-stack web app.  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Technologies Used
+- **Next.js 14 (App Router)** — for modern React-based frontend.  
+- **Tailwind CSS** — for retro pixel styling and responsive layout.  
+- **TypeScript** — for type safety and better structure.  
+- **Custom Retro Components**:
+  - `RetroWindow` — mimics old-school OS windows.  
+  - `MiniTerminal` — interactive fake boot terminal with commands + mini-game.  
+  - `FileExplorer` — folder-based certificate viewer.  
+- **HTML Canvas** — used in background animations (parallax mountains, pixel stars).  
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Features
+- 🎨 **Dynamic Pixel Background** — parallax mountains, clouds, trees, and stars.  
+- 📂 **Retro Folders** — click to open About, Projects, Timeline, and Contact windows.  
+- 🖥️ **Mini Terminal** — fake RetroOS boot logs, command input, and Dino-like robot game.  
+- 📜 **Timeline** — academic & career milestones with clickable certificates.  
+- 🗂️ **File Explorer** — retro folder interface for browsing certificates.  
+- 📧 **Contact Form** — retro-styled form with input validation.  
+- 🔄 **Scene Switching** — toggle between multiple backgrounds.  
+- ❤️ **Pixel Details** — retro navbar, fake battery/wifi/calendar icons, and footer credits.  
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## File Structure
+/public/assets/ → images, icons, backgrounds, certificates
+/src/app/components/ → React components
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Navbar.tsx
+Background.tsx
+VerticalIcons.tsx
+RetroWindow.tsx
+MiniTerminal.tsx
+FileExplorer.tsx
+About.tsx
+Projects.tsx
+Timeline.tsx
+Contact.tsx
+CertViewer.tsx
+BottomInfo.tsx
+/src/app/page.tsx → main entry point
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## How to Run Locally
+1. Clone the repo:
+   ```bash
+   git clone <your-repo-url>
+   cd portfolio
+   npm install
+   npm run dev
+
+© Rahul D Seervi 2025. All Rights Reserved.
+Made with ❤️ and the power of AI.
