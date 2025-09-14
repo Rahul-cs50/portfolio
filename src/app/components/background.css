@@ -1,0 +1,41 @@
+.mountain-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.layer {
+  position: absolute;
+  width: 200%;
+  height: 100%;
+  background-repeat: repeat-x;
+  animation: move 30s linear infinite;
+  image-rendering: pixelated;
+}
+
+.layer-back {
+  background-image: url("https://i.ibb.co/1qB1Zdz/pixel-mountains-back.png");
+  bottom: 0;
+  animation-duration: 100s;
+}
+
+.layer-mid {
+  background-image: url("https://i.ibb.co/2P3TQWm/pixel-mountains-mid.png");
+  bottom: 0;
+  animation-duration: 60s;
+}
+
+.layer-front {
+  background-image: url("https://i.ibb.co/6w7CJhX/pixel-mountains-front.png");
+  bottom: 0;
+  animation-duration: 30s;
+}
+
+@keyframes move {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
