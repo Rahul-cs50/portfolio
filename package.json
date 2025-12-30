@@ -4,8 +4,6 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
     "build:gh": "cross-env NODE_ENV=production next build",
     "predeploy": "npm run build:gh",
     "deploy": "gh-pages -d out"
