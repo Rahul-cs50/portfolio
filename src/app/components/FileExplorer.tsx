@@ -1,21 +1,28 @@
 "use client"
+
 import { useState } from "react"
 import RetroWindow from "./RetroWindow"
 import CertViewer from "./CertViewer"
 
-// Demo certs (replace/expand with your own)
+// Files (images + PDFs both work)
 const files = [
   { name: "MathWorks Workshop", file: "/assets/certs/mathwork.png" },
   { name: "C++ Certificate", file: "/assets/certs/C++.jpg" },
   { name: "CS50x Certificate", file: "/assets/certs/CS50xfinal.png" },
-  { name: "CS50P Certificate", file: "/assets/certs/cs50p.png" },
+  { name: "CS50P Certificate", file: "/assets/certs/CS50Pn.png" },
+  { name: "Cisco Certificate", file: "/assets/certs/cypython-1.png" },
+  { name: "IEEE Paper", file: "/pdfs/IEEE Access Paper.pdf" }, 
 ]
 
 export default function FileExplorer({ onClose }: { onClose: () => void }) {
-  const [selected, setSelected] = useState<{ name: string; file: string } | null>(null)
+  const [selected, setSelected] = useState<{
+    name: string
+    file: string
+  } | null>(null)
 
   return (
     <>
+      {/* File Explorer Window */}
       <section
         id="file"
         className="fixed left-1/2 top-1/2 z-[100] w-[640px] max-w-[95vw] -translate-x-1/2 -translate-y-1/2"
@@ -34,6 +41,7 @@ export default function FileExplorer({ onClose }: { onClose: () => void }) {
                   alt={f.name}
                   className="w-14 h-14 group-hover:scale-110 transition-transform"
                   style={{ imageRendering: "pixelated" }}
+                  draggable={false}
                 />
                 <span className="text-[11px] font-mono text-black mt-1 text-center truncate w-20">
                   {f.name}
@@ -41,13 +49,14 @@ export default function FileExplorer({ onClose }: { onClose: () => void }) {
               </div>
             ))}
           </div>
+
           <p className="mt-4 text-[11px] text-black/60 text-center">
-            Click a folder to open certificate.
+            Click a folder to open certificate or document.
           </p>
         </RetroWindow>
       </section>
 
-      {/* Certificate preview */}
+      {/* Viewer (image or PDF) */}
       {selected && (
         <CertViewer
           src={selected.file}

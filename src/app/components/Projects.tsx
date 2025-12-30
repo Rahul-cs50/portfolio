@@ -24,9 +24,9 @@ const projects: Project[] = [
   },
   {
     title: "CS50P / Python Projects",
-    desc: "Various Python projects including data tools and visualizers.",
-    img: "/assets/projects/retro.png",
-    certs: [{ title: "CS50P Certificate", file: "/assets/certs/cs50p.png" }],
+    desc: "Various Python projects and also learnt about API's , Regular Expressions and many different modules .",
+    img: "/assets/certs/CS50Pn.png",
+    certs: [{ title: "CS50P Certificate", file: "/assets/certs/CS50Pn.png" }],
   },
 ]
 
