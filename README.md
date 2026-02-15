@@ -69,5 +69,5 @@ BottomInfo.tsx
    npm install
    npm run dev
 
-© Rahul D Seervi 2025. All Rights Reserved.
+© Rahul D Seervi 2026. All Rights Reserved.
 Made with ❤️ and the power of AI.

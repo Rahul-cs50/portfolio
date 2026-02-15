@@ -134,7 +134,7 @@ export default function Desktop() {
 
         {/* Bottom-right footer */}
         <div className="fixed bottom-4 right-4 text-[11px] font-mono opacity-80 text-right space-y-1">
-          <div>© ALL RIGHTS RESERVED 2025 ®</div>
+          <div>© ALL RIGHTS RESERVED 2026 ®</div>
           <div>
             Made with the power of AI by Rahul <span className="text-red-500">♥</span>
           </div>
